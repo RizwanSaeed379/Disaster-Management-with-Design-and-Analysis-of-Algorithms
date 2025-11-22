@@ -2,6 +2,7 @@
 #include <vector>
 #include <queue>
 #include <limits>
+#include <cmath>
 #include "node.h"
 #include "edge.h"
 using namespace std;
