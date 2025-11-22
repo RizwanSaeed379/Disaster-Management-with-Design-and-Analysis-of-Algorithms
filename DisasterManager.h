@@ -108,12 +108,16 @@ void computeMetrics() {
             int v = veh.route[i + 1];
 
             // cost
-            for (auto &[nbr, c] : graph.adj[u]) {
-                if (nbr == v && graph.isEdgeAvailable(u,v)) {
+            for (auto edge : graph.adj[u]) {
+                int nbr = edge.first;      // neighbor node
+                int c   = edge.second;     // cost
+            
+                if (nbr == v && graph.isEdgeAvailable(u, v)) {
                     cost += c;
                     break;
                 }
             }
+            
 
             // reliability
             if (graph.isEdgeAvailable(u,v)) {
