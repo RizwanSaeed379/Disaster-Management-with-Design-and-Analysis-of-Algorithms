@@ -32,8 +32,8 @@ int main() {
     for (auto &jn : cfg["graph"]["nodes"]) {
         Node n;
         n.id = jn["id"];
-        n.demand  = jn["x"];
-        n.priority  = jn["y"];
+        n.demand  = jn["demand"];
+        n.priority  = jn["priority"];
         g.nodes.push_back(n);
     }
 

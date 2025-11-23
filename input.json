@@ -2,11 +2,11 @@
     "graph": {
       "num_nodes": 5,
       "nodes": [
-        { "id": 0, "x": 0, "y": 0 },
-        { "id": 1, "x": 3, "y": 5 },
-        { "id": 2, "x": 2, "y": 3 },
-        { "id": 3, "x": 4, "y": 4 },
-        { "id": 4, "x": 1, "y": 2 }
+        { "id": 0, "demand": 0, "priority": 0 },
+        { "id": 1, "demand": 3, "priority": 5 },
+        { "id": 2, "demand": 2, "priority": 3 },
+        { "id": 3, "demand": 4, "priority": 4 },
+        { "id": 4, "demand": 1, "priority": 2 }
       ],
       "edges": [
         { "u": 0, "v": 1, "cost": 4, "reliability": 0.9 },
