@@ -15,7 +15,7 @@ using namespace std;
 
 int main() {
 
-    ifstream file("input.json");
+    ifstream file("C:input.json");
     if (!file) {
         cerr << "Failed to open input.json\n";
         return 1;
