@@ -7,58 +7,67 @@
 #include "vehicle.h"
 #include "DisasterManager.h"
 #include "json.hpp"
+#include <filesystem>
 
 using json = nlohmann::json;
-
-
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
 
-    ifstream file("C:input.json");
+    // Determine file path
+    string filepath;
+    if (argc > 1) {
+        filepath = argv[1]; // Path from command line
+    } else {
+        filepath = "input.json"; // Default file in same folder as exe
+    }
+
+    // Print current working directory
+    cout << "Current working directory: " << std::filesystem::current_path() << endl;
+    cout << "Attempting to open file: " << filepath << endl;
+
+    // Open file
+    ifstream file(filepath);
     if (!file) {
-        cerr << "Failed to open input.json\n";
+        cerr << "Failed to open file: " << filepath << endl;
         return 1;
     }
 
+    // Parse JSON
     json cfg;
     file >> cfg;
 
-   
     int numNodes = cfg["graph"]["num_nodes"];
     Graph g(numNodes);
 
-    // Load nodes
-    for (auto &jn : cfg["graph"]["nodes"]) {
-        Node n;
-        n.id = jn["id"];
-        n.demand  = jn["x"];
-        n.priority  = jn["y"];
-        g.nodes.push_back(n);
-    }
+// Load nodes
+for (auto &jn : cfg["graph"]["nodes"]) {
+    Node n;
+    n.id = jn.value("id", 0);
+    n.demand = jn.value("demand", 0);
+    n.priority = jn.value("priority", 0);
+    g.nodes.push_back(n);
+}
 
-    // Load edges
-    for (auto &je : cfg["graph"]["edges"]) {
-        int u = je["u"];
-        int v = je["v"];
-        int cost = je["cost"];
-        double rel = je["reliability"];
-        g.addEdge(u, v, cost, rel);
-    }
 
-   
+
+   for (auto &je : cfg["graph"]["edges"]) {
+    int u = je.value("u", -1);
+    int v = je.value("v", -1);
+    int cost = je.value("cost", 0);
+    double rel = je.value("reliability", 1.0);
+    if(u >= 0 && v >= 0) g.addEdge(u, v, cost, rel);
+}
+
+
+    // Load vehicles
     vector<Vehicle> vehicles;
-
     for (auto &jv : cfg["vehicles"]) {
         Vehicle v;
         v.id = jv["id"];
         v.capacity = jv["capacity"];
         vehicles.push_back(v);
     }
-
-
-    
-    
 
     // Create DisasterManager
     DisasterManager dm(g, vehicles);
