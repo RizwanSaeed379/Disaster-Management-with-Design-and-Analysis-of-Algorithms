@@ -3,5 +3,5 @@
 struct Vehicle {
     int id;
     int capacity;
-    std::vector<int> route; // ordered list of node IDs
+    vector<int> route; // ordered list of node IDs
 };

@@ -22,12 +22,18 @@ struct DisasterManager {
         nodes.erase(nodes.begin()); // remove depot
 
         // Compute efficiency score = priority / demand
-        std::sort(nodes.begin(), nodes.end(), [](Node a, Node b) {
-            double scoreA = (a.demand > 0) ? (double)a.priority / a.demand : a.priority;
-            double scoreB = (b.demand > 0) ? (double)b.priority / b.demand : b.priority;
-            return scoreA > scoreB;
+        for (auto &node : nodes) {
+            if (node.demand > 0)
+                node.priority = node.priority / node.demand;
+            else
+                node.priority = 0;
+        }
+        // Sort nodes by efficiency descending
+        sort(nodes.begin(), nodes.end(), [](Node &a, Node &b) {
+            return a.priority > b.priority;
         });
 
+        
         vector<bool> nodeAssigned(graph.nodes.size(), false); // track assigned nodes across all vehicles
 
         // First pass: Assign nodes using best-fit heuristic

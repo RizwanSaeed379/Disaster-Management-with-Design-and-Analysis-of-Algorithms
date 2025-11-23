@@ -80,31 +80,32 @@ int main()
 
 Graph g(5); // 0 = depot, 1-4 = demand nodes
 g.nodes = {
-    {0, 0, 0},  // depot
-    {1, 4, 5},  // demand=4, priority=5
-    {2, 2, 3},  // demand=2
-    {3, 3, 4},  // demand=3
-    {4, 1, 2}   // demand=1
+    // Nodes: id, demand, priority
+    {0, 0, 0},  
+    {1, 3, 5},  
+    {2, 2, 3},  
+    {3, 4, 4},  
+    {4, 1, 2}   
 };
 
 // Edges: u, v, cost, reliability
-g.addEdge(0,1,5,0.9);
-g.addEdge(0,2,6,0.85);
-g.addEdge(0,3,7,0.8);
-g.addEdge(0,4,3,0.95);
-g.addEdge(1,2,3,0.9);
-g.addEdge(2,3,2,0.9);
-g.addEdge(3,4,4,0.85);
+g.addEdge(0,1,4,0.9);
+g.addEdge(0,2,6,0.8);
+g.addEdge(1,2,2,0.7);
+g.addEdge(1,3,5,0.95);
+g.addEdge(2,3,3,0.85);
+g.addEdge(3,4,4,0.9);
 
-// Vehicles
+// Vehicles : id, capacity
 vector<Vehicle> vehicles = {
     {1, 5, {}}, // capacity 5
-    {2, 5, {}}, // capacity 5
-    {3, 1, {}}  // capacity 1 → will remain idle if demands > 1
+    {2, 6, {}}, // capacity 6
 };
 
+// Simulate edge failures
 g.setEdgeAvailability(0,4,false); // prevent vehicle 3 from reaching node 4 directly
 g.setEdgeAvailability(3,4,false); // optional: prevent routing via other nodes if needed
+
 
     DisasterManager dm(g,vehicles);
     dm.allocateAndRoute();
