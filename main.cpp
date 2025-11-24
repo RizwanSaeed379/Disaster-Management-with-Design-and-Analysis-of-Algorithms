@@ -69,6 +69,9 @@ int main(int argc, char* argv[]) {
         vehicles.push_back(v);
     }
 
+    g.setEdgeAvailability(3, 4, false);
+    g.setEdgeAvailability(4, 3, false);
+
     // Create DisasterManager
     DisasterManager dm(g, vehicles);
 
