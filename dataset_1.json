@@ -1,0 +1,865 @@
+{
+  "graph": {
+    "num_nodes": 50,
+    "nodes": [
+      {
+        "id": 0,
+        "demand": 0,
+        "priority": 0
+      },
+      {
+        "id": 1,
+        "demand": 3,
+        "priority": 0.58
+      },
+      {
+        "id": 2,
+        "demand": 2,
+        "priority": 0.62
+      },
+      {
+        "id": 3,
+        "demand": 7,
+        "priority": 0.58
+      },
+      {
+        "id": 4,
+        "demand": 4,
+        "priority": 0.56
+      },
+      {
+        "id": 5,
+        "demand": 3,
+        "priority": 0.89
+      },
+      {
+        "id": 6,
+        "demand": 10,
+        "priority": 0.85
+      },
+      {
+        "id": 7,
+        "demand": 7,
+        "priority": 0.63
+      },
+      {
+        "id": 8,
+        "demand": 8,
+        "priority": 0.75
+      },
+      {
+        "id": 9,
+        "demand": 2,
+        "priority": 0.77
+      },
+      {
+        "id": 10,
+        "demand": 1,
+        "priority": 0.67
+      },
+      {
+        "id": 11,
+        "demand": 9,
+        "priority": 0.72
+      },
+      {
+        "id": 12,
+        "demand": 10,
+        "priority": 0.91
+      },
+      {
+        "id": 13,
+        "demand": 3,
+        "priority": 0.58
+      },
+      {
+        "id": 14,
+        "demand": 3,
+        "priority": 0.59
+      },
+      {
+        "id": 15,
+        "demand": 4,
+        "priority": 0.52
+      },
+      {
+        "id": 16,
+        "demand": 1,
+        "priority": 0.62
+      },
+      {
+        "id": 17,
+        "demand": 6,
+        "priority": 0.89
+      },
+      {
+        "id": 18,
+        "demand": 3,
+        "priority": 0.67
+      },
+      {
+        "id": 19,
+        "demand": 5,
+        "priority": 0.8
+      },
+      {
+        "id": 20,
+        "demand": 4,
+        "priority": 0.78
+      },
+      {
+        "id": 21,
+        "demand": 2,
+        "priority": 0.94
+      },
+      {
+        "id": 22,
+        "demand": 10,
+        "priority": 0.74
+      },
+      {
+        "id": 23,
+        "demand": 1,
+        "priority": 0.52
+      },
+      {
+        "id": 24,
+        "demand": 5,
+        "priority": 0.78
+      },
+      {
+        "id": 25,
+        "demand": 1,
+        "priority": 0.56
+      },
+      {
+        "id": 26,
+        "demand": 8,
+        "priority": 0.85
+      },
+      {
+        "id": 27,
+        "demand": 6,
+        "priority": 0.8
+      },
+      {
+        "id": 28,
+        "demand": 4,
+        "priority": 0.56
+      },
+      {
+        "id": 29,
+        "demand": 4,
+        "priority": 0.64
+      },
+      {
+        "id": 30,
+        "demand": 1,
+        "priority": 0.77
+      },
+      {
+        "id": 31,
+        "demand": 10,
+        "priority": 0.9
+      },
+      {
+        "id": 32,
+        "demand": 9,
+        "priority": 0.62
+      },
+      {
+        "id": 33,
+        "demand": 9,
+        "priority": 0.76
+      },
+      {
+        "id": 34,
+        "demand": 10,
+        "priority": 0.74
+      },
+      {
+        "id": 35,
+        "demand": 8,
+        "priority": 0.58
+      },
+      {
+        "id": 36,
+        "demand": 7,
+        "priority": 0.66
+      },
+      {
+        "id": 37,
+        "demand": 7,
+        "priority": 0.98
+      },
+      {
+        "id": 38,
+        "demand": 3,
+        "priority": 0.83
+      },
+      {
+        "id": 39,
+        "demand": 9,
+        "priority": 0.91
+      },
+      {
+        "id": 40,
+        "demand": 3,
+        "priority": 0.53
+      },
+      {
+        "id": 41,
+        "demand": 6,
+        "priority": 0.85
+      },
+      {
+        "id": 42,
+        "demand": 1,
+        "priority": 0.56
+      },
+      {
+        "id": 43,
+        "demand": 10,
+        "priority": 0.74
+      },
+      {
+        "id": 44,
+        "demand": 2,
+        "priority": 0.59
+      },
+      {
+        "id": 45,
+        "demand": 5,
+        "priority": 0.63
+      },
+      {
+        "id": 46,
+        "demand": 7,
+        "priority": 0.55
+      },
+      {
+        "id": 47,
+        "demand": 8,
+        "priority": 0.64
+      },
+      {
+        "id": 48,
+        "demand": 9,
+        "priority": 0.91
+      },
+      {
+        "id": 49,
+        "demand": 8,
+        "priority": 0.58
+      }
+    ],
+    "edges": [
+      {
+        "u": 0,
+        "v": 44,
+        "cost": 5,
+        "reliability": 0.69
+      },
+      {
+        "u": 0,
+        "v": 34,
+        "cost": 2,
+        "reliability": 0.6
+      },
+      {
+        "u": 44,
+        "v": 11,
+        "cost": 3,
+        "reliability": 1.0
+      },
+      {
+        "u": 34,
+        "v": 13,
+        "cost": 2,
+        "reliability": 0.56
+      },
+      {
+        "u": 13,
+        "v": 12,
+        "cost": 2,
+        "reliability": 0.65
+      },
+      {
+        "u": 0,
+        "v": 17,
+        "cost": 4,
+        "reliability": 0.91
+      },
+      {
+        "u": 34,
+        "v": 25,
+        "cost": 6,
+        "reliability": 0.89
+      },
+      {
+        "u": 34,
+        "v": 6,
+        "cost": 2,
+        "reliability": 0.92
+      },
+      {
+        "u": 17,
+        "v": 49,
+        "cost": 5,
+        "reliability": 0.96
+      },
+      {
+        "u": 34,
+        "v": 33,
+        "cost": 6,
+        "reliability": 0.73
+      },
+      {
+        "u": 6,
+        "v": 29,
+        "cost": 1,
+        "reliability": 0.86
+      },
+      {
+        "u": 13,
+        "v": 3,
+        "cost": 9,
+        "reliability": 0.9
+      },
+      {
+        "u": 6,
+        "v": 22,
+        "cost": 3,
+        "reliability": 0.87
+      },
+      {
+        "u": 13,
+        "v": 46,
+        "cost": 9,
+        "reliability": 0.64
+      },
+      {
+        "u": 25,
+        "v": 4,
+        "cost": 3,
+        "reliability": 0.93
+      },
+      {
+        "u": 3,
+        "v": 47,
+        "cost": 2,
+        "reliability": 0.89
+      },
+      {
+        "u": 47,
+        "v": 35,
+        "cost": 7,
+        "reliability": 0.81
+      },
+      {
+        "u": 33,
+        "v": 10,
+        "cost": 1,
+        "reliability": 0.81
+      },
+      {
+        "u": 46,
+        "v": 37,
+        "cost": 2,
+        "reliability": 0.93
+      },
+      {
+        "u": 3,
+        "v": 26,
+        "cost": 8,
+        "reliability": 0.52
+      },
+      {
+        "u": 10,
+        "v": 16,
+        "cost": 6,
+        "reliability": 0.62
+      },
+      {
+        "u": 3,
+        "v": 38,
+        "cost": 1,
+        "reliability": 0.87
+      },
+      {
+        "u": 47,
+        "v": 21,
+        "cost": 4,
+        "reliability": 0.75
+      },
+      {
+        "u": 49,
+        "v": 23,
+        "cost": 4,
+        "reliability": 0.73
+      },
+      {
+        "u": 21,
+        "v": 40,
+        "cost": 7,
+        "reliability": 0.76
+      },
+      {
+        "u": 46,
+        "v": 24,
+        "cost": 10,
+        "reliability": 0.9
+      },
+      {
+        "u": 37,
+        "v": 8,
+        "cost": 5,
+        "reliability": 0.58
+      },
+      {
+        "u": 22,
+        "v": 39,
+        "cost": 10,
+        "reliability": 0.78
+      },
+      {
+        "u": 12,
+        "v": 1,
+        "cost": 10,
+        "reliability": 0.68
+      },
+      {
+        "u": 8,
+        "v": 45,
+        "cost": 10,
+        "reliability": 0.91
+      },
+      {
+        "u": 8,
+        "v": 2,
+        "cost": 3,
+        "reliability": 0.78
+      },
+      {
+        "u": 35,
+        "v": 20,
+        "cost": 4,
+        "reliability": 0.5
+      },
+      {
+        "u": 25,
+        "v": 36,
+        "cost": 5,
+        "reliability": 0.9
+      },
+      {
+        "u": 47,
+        "v": 42,
+        "cost": 10,
+        "reliability": 0.69
+      },
+      {
+        "u": 34,
+        "v": 28,
+        "cost": 8,
+        "reliability": 0.87
+      },
+      {
+        "u": 13,
+        "v": 5,
+        "cost": 2,
+        "reliability": 0.7
+      },
+      {
+        "u": 44,
+        "v": 31,
+        "cost": 6,
+        "reliability": 0.75
+      },
+      {
+        "u": 6,
+        "v": 15,
+        "cost": 9,
+        "reliability": 0.84
+      },
+      {
+        "u": 31,
+        "v": 19,
+        "cost": 5,
+        "reliability": 0.73
+      },
+      {
+        "u": 11,
+        "v": 27,
+        "cost": 3,
+        "reliability": 0.6
+      },
+      {
+        "u": 27,
+        "v": 30,
+        "cost": 8,
+        "reliability": 0.77
+      },
+      {
+        "u": 27,
+        "v": 48,
+        "cost": 7,
+        "reliability": 0.65
+      },
+      {
+        "u": 10,
+        "v": 32,
+        "cost": 5,
+        "reliability": 0.55
+      },
+      {
+        "u": 4,
+        "v": 9,
+        "cost": 2,
+        "reliability": 0.95
+      },
+      {
+        "u": 47,
+        "v": 7,
+        "cost": 10,
+        "reliability": 0.67
+      },
+      {
+        "u": 12,
+        "v": 43,
+        "cost": 7,
+        "reliability": 0.55
+      },
+      {
+        "u": 45,
+        "v": 14,
+        "cost": 7,
+        "reliability": 0.95
+      },
+      {
+        "u": 1,
+        "v": 41,
+        "cost": 10,
+        "reliability": 0.89
+      },
+      {
+        "u": 13,
+        "v": 18,
+        "cost": 1,
+        "reliability": 0.92
+      },
+      {
+        "u": 32,
+        "v": 39,
+        "cost": 2,
+        "reliability": 0.84
+      },
+      {
+        "u": 3,
+        "v": 30,
+        "cost": 3,
+        "reliability": 0.62
+      },
+      {
+        "u": 34,
+        "v": 10,
+        "cost": 8,
+        "reliability": 0.73
+      },
+      {
+        "u": 36,
+        "v": 41,
+        "cost": 3,
+        "reliability": 0.68
+      },
+      {
+        "u": 31,
+        "v": 36,
+        "cost": 8,
+        "reliability": 0.63
+      },
+      {
+        "u": 49,
+        "v": 12,
+        "cost": 4,
+        "reliability": 0.87
+      },
+      {
+        "u": 38,
+        "v": 4,
+        "cost": 3,
+        "reliability": 0.68
+      },
+      {
+        "u": 48,
+        "v": 37,
+        "cost": 5,
+        "reliability": 0.99
+      },
+      {
+        "u": 27,
+        "v": 13,
+        "cost": 9,
+        "reliability": 0.57
+      },
+      {
+        "u": 42,
+        "v": 7,
+        "cost": 1,
+        "reliability": 0.83
+      },
+      {
+        "u": 4,
+        "v": 35,
+        "cost": 7,
+        "reliability": 0.61
+      },
+      {
+        "u": 2,
+        "v": 26,
+        "cost": 8,
+        "reliability": 0.94
+      },
+      {
+        "u": 6,
+        "v": 9,
+        "cost": 9,
+        "reliability": 0.66
+      },
+      {
+        "u": 47,
+        "v": 9,
+        "cost": 9,
+        "reliability": 0.66
+      },
+      {
+        "u": 36,
+        "v": 30,
+        "cost": 5,
+        "reliability": 0.56
+      },
+      {
+        "u": 40,
+        "v": 18,
+        "cost": 1,
+        "reliability": 0.72
+      },
+      {
+        "u": 41,
+        "v": 48,
+        "cost": 6,
+        "reliability": 0.78
+      },
+      {
+        "u": 19,
+        "v": 27,
+        "cost": 2,
+        "reliability": 0.94
+      },
+      {
+        "u": 37,
+        "v": 30,
+        "cost": 9,
+        "reliability": 0.51
+      },
+      {
+        "u": 7,
+        "v": 12,
+        "cost": 2,
+        "reliability": 0.8
+      },
+      {
+        "u": 3,
+        "v": 33,
+        "cost": 8,
+        "reliability": 0.52
+      },
+      {
+        "u": 3,
+        "v": 16,
+        "cost": 10,
+        "reliability": 0.93
+      },
+      {
+        "u": 19,
+        "v": 24,
+        "cost": 8,
+        "reliability": 0.99
+      },
+      {
+        "u": 44,
+        "v": 19,
+        "cost": 6,
+        "reliability": 0.87
+      },
+      {
+        "u": 31,
+        "v": 18,
+        "cost": 8,
+        "reliability": 0.72
+      },
+      {
+        "u": 4,
+        "v": 29,
+        "cost": 4,
+        "reliability": 0.66
+      },
+      {
+        "u": 44,
+        "v": 22,
+        "cost": 4,
+        "reliability": 0.53
+      },
+      {
+        "u": 28,
+        "v": 4,
+        "cost": 6,
+        "reliability": 0.79
+      },
+      {
+        "u": 12,
+        "v": 2,
+        "cost": 8,
+        "reliability": 0.97
+      },
+      {
+        "u": 36,
+        "v": 17,
+        "cost": 9,
+        "reliability": 0.95
+      },
+      {
+        "u": 1,
+        "v": 47,
+        "cost": 10,
+        "reliability": 0.67
+      },
+      {
+        "u": 39,
+        "v": 26,
+        "cost": 9,
+        "reliability": 0.84
+      },
+      {
+        "u": 2,
+        "v": 16,
+        "cost": 1,
+        "reliability": 0.61
+      },
+      {
+        "u": 17,
+        "v": 38,
+        "cost": 10,
+        "reliability": 0.84
+      },
+      {
+        "u": 15,
+        "v": 8,
+        "cost": 9,
+        "reliability": 0.51
+      },
+      {
+        "u": 23,
+        "v": 34,
+        "cost": 6,
+        "reliability": 0.61
+      },
+      {
+        "u": 46,
+        "v": 17,
+        "cost": 9,
+        "reliability": 0.74
+      },
+      {
+        "u": 2,
+        "v": 0,
+        "cost": 2,
+        "reliability": 0.72
+      },
+      {
+        "u": 2,
+        "v": 7,
+        "cost": 10,
+        "reliability": 0.73
+      },
+      {
+        "u": 11,
+        "v": 17,
+        "cost": 8,
+        "reliability": 0.72
+      },
+      {
+        "u": 24,
+        "v": 44,
+        "cost": 4,
+        "reliability": 0.73
+      },
+      {
+        "u": 23,
+        "v": 25,
+        "cost": 8,
+        "reliability": 0.63
+      },
+      {
+        "u": 2,
+        "v": 3,
+        "cost": 10,
+        "reliability": 0.88
+      },
+      {
+        "u": 24,
+        "v": 45,
+        "cost": 3,
+        "reliability": 0.82
+      },
+      {
+        "u": 24,
+        "v": 31,
+        "cost": 3,
+        "reliability": 0.64
+      },
+      {
+        "u": 36,
+        "v": 22,
+        "cost": 5,
+        "reliability": 0.91
+      },
+      {
+        "u": 30,
+        "v": 28,
+        "cost": 1,
+        "reliability": 0.6
+      },
+      {
+        "u": 2,
+        "v": 37,
+        "cost": 3,
+        "reliability": 0.93
+      },
+      {
+        "u": 20,
+        "v": 9,
+        "cost": 7,
+        "reliability": 0.92
+      },
+      {
+        "u": 11,
+        "v": 25,
+        "cost": 2,
+        "reliability": 0.77
+      },
+      {
+        "u": 27,
+        "v": 31,
+        "cost": 6,
+        "reliability": 0.78
+      }
+    ]
+  },
+  "vehicles": [
+    {
+      "id": 1,
+      "capacity": 322
+    }
+  ]
+}
